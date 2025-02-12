@@ -1,0 +1,313 @@
+/* Estilos para o cabeçalho */
+.header {
+  background-color: #907777; /* Cor de fundo do cabeçalho */
+  display: flex; /* Utiliza Flexbox para organizar os itens */
+  justify-content: space-between; /* Espaçamento entre os elementos */
+  align-items: center; /* Alinha os itens verticalmente */
+  padding: 10px 20px; /* Espaçamento interno */
+  position: fixed; /* Fixa o cabeçalho no topo da página */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar o cabeçalho */
+}
+
+/* Logo */
+.header .logo img {
+  height: 60px; /* Ajuste do tamanho da imagem */
+}
+
+/* Menu de navegação */
+#menu {
+  flex: 1;
+  text-align: center;
+}
+
+#menu p {
+  margin: 0;
+}
+
+#menu a {
+  margin: 0 20px; /* Espaçamento entre os links */
+  text-decoration: none; /* Remove o sublinhado */
+  color: #ffffff; /* Cor dos links */
+  font-size: 20px; /* Tamanho da fonte */
+  padding-top: 0.10rem; /* Espaçamento superior */
+  border-top: 2px solid #ae9393;
+  font-family: 'Roboto', sans-serif;
+}
+
+#menu a:hover {
+    color: #000000ba; /* Cor do link */
+    padding-top: 0.10rem; /* Espaçamento superior */
+    border-top: 2px solid #bc9e98ba; /* Borda superior */
+  }
+  
+  /* Efeito de hover nos links */
+  #menu p a:hover {
+    background: #D8E1F3; /* Cor de fundo ao passar o mouse */
+  }
+  
+/* Estilos dos ícones */
+.icons {
+  display: flex;
+  gap: 20px; /* Espaço entre os ícones */
+  align-items: center;
+}
+
+.icons ion-icon {
+  font-size: 24px; /* Tamanho dos ícones */
+  color: white; /* Cor dos ícones */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icons ion-icon:hover {
+  color: #ffcc00; /* Cor de destaque para os ícones quando passar o mouse */
+}
+
+/* Ícone do menu */
+#menu-btn {
+  display: none; /* Inicialmente oculto em telas maiores */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  /* No celular, o menu de navegação se torna um menu suspenso */
+  #menu {
+    display: none; /* Oculta o menu de navegação */
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  #menu-btn {
+    display: block; /* Exibe o ícone do menu em telas menores */
+  }
+
+  .icons {
+    margin-left: auto; /* Alinha os ícones à direita */
+  }
+
+  /* Mostra o menu quando o botão de menu é clicado */
+  #menu.active {
+    display: block;
+  }
+
+  /* Responsabilidade no tamanho do logo */
+  .header .logo img {
+    height: 30px;
+  }
+}
+/* Estilos principais para o corpo da página */
+main {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4; /* Cor de fundo suave */
+}
+
+/* Seção de introdução */
+.introducao {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.introducao h1 {
+  font-size: 4em;
+  color: #907777; /* Cor do título principal */
+  margin-top: 16;
+}
+
+.introducao h2 {
+  font-size: 3em;
+  color: #9c9c9c; /* Cor do subtítulo */
+  margin-top: 15;
+}
+
+/* Seção principal de boas-vindas */
+.home {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(255, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home h3 {
+  font-size: 2em;
+  color: #000000;
+}
+
+.home p {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Seção sobre nós */
+.sobre-nos {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.sobre-nos h3 {
+  font-size: 2em;
+  color: #000000;
+}
+
+.sobre-nos p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Seção imperdível */
+.imperdivel {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.imperdivel h3 {
+  font-size: 2em;
+  color: #000000;
+}
+
+.imperdivel ol {
+  font-size: 1.2em;
+  color: #555;
+  list-style: none;
+  padding-left: 0;
+}
+
+.imperdivel li {
+  margin-bottom: 10px;
+}
+
+.imperdivel a {
+  text-decoration: none;
+  color: #333; /* Cor do link */
+}
+
+.imperdivel a:hover {
+  text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+/* Seção de contato */
+.contato {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.contato h3 {
+  font-size: 2em;
+  color: #000000;
+}
+
+.contato ul {
+  font-size: 1.2em;
+  color: #555;
+  list-style: none;
+  padding-left: 0;
+}
+
+.contato li {
+  margin-bottom: 10px;
+}
+
+.contato a {
+  text-decoration: none;
+  color: #333; /* Cor do link */
+}
+
+.contato a:hover {
+  text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+/* Seção de endereço */
+.endereco {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.endereco h4 {
+  font-size: 2em;
+  color: #000000;
+}
+
+.endereco p {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Estilo para links com telefone */
+a[href^="tel"], a[href^="https://api.whatsapp.com"] {
+  font-weight: bold;
+  color: #333; /* Cor do link para WhatsApp */
+}
+
+a[href^="tel"]:hover, a[href^="https://api.whatsapp.com"]:hover {
+  color: #bc9e98ba; /* Cor do link para WhatsApp quando passa o mouse */
+}
+
+/* Estilização da barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Estilo da parte de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: transparent; /* Fundo transparente */
+}
+
+/* Estilo da parte que você desliza (a parte que mexe) */
+::-webkit-scrollbar-thumb {
+  background: #333; /* Cor preta */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 3px solid transparent; /* Espaço ao redor do "thumb" */
+  background-clip: content-box; /* Garante que o fundo seja transparente ao redor */
+}
+
+/* Estilo para quando o usuário passa o mouse sobre o "thumb" da barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor mais clara quando o usuário passa o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #907777; /* Cor de fundo escura para o rodapé */
+  color: #ffffff; /* Cor do texto em branco */
+  padding: 20px 0; /* Espaçamento superior e inferior */
+  text-align: center; /* Centraliza o texto */
+  position: relative; /* Para garantir que o rodapé apareça após o conteúdo */
+  bottom: 0;
+  width: 100%;
+}
+
+footer .container {
+  max-width: 1200px; /* Limita a largura do conteúdo do rodapé */
+  margin: 0 auto; /* Centraliza o container */
+  padding: 0 20px; /* Adiciona espaçamento lateral */
+}
+
+footer p {
+  font-size: 1em; /* Tamanho de fonte padrão */
+  margin: 0; /* Remove margem padrão */
+  color: #ffffff; /* Cor do texto */
+}
+

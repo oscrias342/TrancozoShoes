@@ -1,0 +1,227 @@
+/* Estilos para o cabeçalho */
+.header {
+  background-color: #907777; /* Cor de fundo mais neutra */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+  transition: background-color 0.3s ease; /* Transição suave de cor */
+}
+
+.header:hover {
+  background-color: #a88b8b; /* Cor de fundo ao passar o mouse */
+}
+
+/* Logo */
+.header .logo img {
+  height: 50px;
+  transition: transform 0.3s ease; /* Animação na logo */
+}
+
+.header .logo img:hover {
+  transform: scale(1.1); /* Aumenta o tamanho da logo ao passar o mouse */
+}
+
+/* Menu de navegação */
+#menu {
+  flex: 1;
+  text-align: center;
+}
+
+#menu p {
+  margin: 0;
+}
+
+#menu a {
+  margin: 0 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase; /* Letras maiúsculas */
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s, color 0.3s; /* Transições suaves */
+}
+
+#menu a:hover {
+  color: #000000ba;
+  border-bottom: 2px solid #bc9e98ba;/* Destaca o link com uma borda amarela */
+}
+
+/* Estilos dos ícones */
+.icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icons ion-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+.icons ion-icon:hover {
+  color: #ffcc00;
+  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+/* Ícone do menu */
+#menu-btn {
+  display: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  #menu {
+    display: none;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  #menu-btn {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .icons {
+    margin-left: auto;
+  }
+
+  #menu.active {
+    display: block;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .header .logo img {
+    height: 40px;
+  }
+
+  #menu p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  #menu a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .icons {
+    gap: 15px;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .icons ion-icon {
+    font-size: 20px;
+  }
+}
+
+/* Estilos principais para o corpo da página */
+main {
+  font-family: 'Arial', sans-serif;
+  padding: 100px 20px 20px; /* Mais espaçamento superior devido ao cabeçalho fixo */
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* Seção de introdução */
+.introducao h1 {
+  font-size: 3.5em;
+  color: #333;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-out;
+}
+
+.introducao h1:hover {
+  transform: translateY(-10px); /* Efeito de levantar o título */
+}
+
+.introducao h2 {
+  font-size: 2.5em;
+  color: #907777;
+}
+
+/* Estilo para as seções principais */
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
+}
+
+section h3 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+section p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Seção de contato */
+.contato a {
+  color: #333;
+  font-weight: bold;
+}
+
+.contato a:hover {
+  color: #555; 
+  text-decoration: underline;
+}
+
+/* Estilo para links com telefone */
+a[href^="tel"], a[href^="https://api.whatsapp.com"] {
+  font-weight: bold;
+  color: #555; 
+}
+
+a[href^="tel"]:hover, a[href^="https://api.whatsapp.com"]:hover {
+  color: #555; 
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #907777;
+  color: #ffffff; /* Cor do texto em branco */
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer p {
+  font-size: 1em;
+  color: #fff;
+}

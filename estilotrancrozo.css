@@ -1,0 +1,137 @@
+
+
+
+
+/* ESTILIZAÇÃO DA ESTRUTURA */
+body{
+    background:#fef8f2;
+    background-repeat:no-repeat;
+    margin-top: 0px;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+} 
+
+
+body, td, th{ border: #101112;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    color: #000000ba;
+}
+
+/*ESTILIZAÇÃO DO MENU*/
+#menu{border: #101112;
+    background: url(imagens/logo-sem-fundo.png) no-repeat;
+    text-align: right;
+    padding-top: 80px;
+    padding-right: 25px;
+    padding-left: 15px;
+}
+#menu p{ border: #101112;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#menu p a{
+    font-weight: normal;
+    color: #000000ba;
+    text-decoration: none;
+    margin-left: 0px;
+    padding-top: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 2px solid #bc9e98ba;
+}
+#menu p a:hover{
+    background: #D8E1F3;
+}
+#titulos{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#conteudo{
+    text-align: justify;
+    margin-left: 240px;
+    padding-right: 15px;
+}
+
+h1{
+    font-size: 50px;
+    color: #000000ba;
+    font-weight: normal;
+    margin-bottom: 0px;
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+    background: #bc9e98ba;
+    color: #fff;
+    padding: 10px;
+    margin-top: 0px;
+}
+h3{
+    font-size: 20px;
+    color: #000000ba;
+    font-weight: normal;
+    border-bottom: 2px solid #a9767a
+}
+#conteudo ul{
+    padding-left: 25px;
+}
+#conteudo ul li{
+    padding-bottom: 10px;
+    list-style: url(imagens/);
+}
+#conteudo p img{
+    padding: 10px;
+    margin-right: 7px;
+    margin-bottom: 14px;
+    border: 1px solid #bc9e98ba;;
+}
+table{
+    width: 600px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+caption{
+    font-weight: bolder;
+    background: #a9767a;
+    color: #fff;  
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+
+.destaque {
+	font-size: 14px;
+	color: #a9767a;
+	background: #FFF;
+	padding: 3px;
+}
+
+/* Estilização da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Estilo da parte de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: transparent; /* Fundo transparente */
+}
+
+/* Estilo da parte que você desliza (a parte que mexe) */
+::-webkit-scrollbar-thumb {
+    background: #333; /* Cor preta */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 3px solid transparent; /* Espaço ao redor do "thumb" */
+    background-clip: content-box; /* Garante que o fundo seja transparente ao redor */
+}
+
+/* Estilo para quando o usuário passa o mouse sobre o "thumb" da barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor mais clara quando o usuário passa o mouse */
+}
+
+
+

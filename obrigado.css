@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e2d9d9;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2.1);
+}
+
+h1 {
+    color: #5cb85c;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow to the header */
+}
+
+p {
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Added shadow to paragraphs */
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow to the button */
+}
+
+a:hover {
+    background-color: #4cae4c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly enhanced shadow on hover */
+}
